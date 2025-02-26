@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactStyle.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Sunshine Dynamics</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<style>
+
+  </style>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li class="dropdown / montserrat-font">
+              <a href="index.html" class="dropbtn">Home</a>
+              
+             </li>
+  
+             <li class="dropdown / montserrat-font">
+              <a href="products.html" class="dropbtn">Products</a>
+            
+             </li>
+  
+             <li class="dropdown / montserrat-font">
+              <a href="requests.html" class="dropbtn">Requests</a>
+              
+             </li>
+  
+             <li class="dropdown / montserrat-font">
+              <a href="resources.html" class="dropbtn">Resources</a>
+              
+             </li>
+  
+             <li class="dropdown / montserrat-font">
+              <a href="nogrid.html" class="dropbtn">About Us</a>
+        
+             </li>
+  
+             <li class="dropdown / montserrat-font">
+              <a href="contact.html" class="dropbtn">Contact</a>
+              
+             </li>
+  
+             <li class="dropdown / montserrat-font">
+              <a href="profile.php" class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg></a>
+             </li>
+  
+      
+  
+             
+          
+             <li class="dropdown / montserrat-font">
+              <a href="#benefits" class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></a>
+              <div class="dropdown-content">
+                <!--Search Navigation Bar-->
+           
+                <div class="search-container">
+            <form class="search-bar">
+                <input class="form-control mr-sm-2" type="search" placeholder="Keyword" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+                </div>
+              </div>
+            </div>
+             </li>
+  
+             
+  
+              <!-- FIX ME...Link URL to desired pages within # 
+              <li class="hideOnMobile"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="white"><path d="M42-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H42Zm80-80h480v-32q0-11-5.5-20T582-266q-36-18-92.5-36T362-320q-71 0-127.5 18T142-266q-9 5-14.5 14t-5.5 20v32Zm240-240q-66 0-113-47t-47-113h-10q-9 0-14.5-5.5T172-620q0-9 5.5-14.5T192-640h10q0-45 22-81t58-57v38q0 9 5.5 14.5T302-720q9 0 14.5-5.5T322-740v-54q9-3 19-4.5t21-1.5q11 0 21 1.5t19 4.5v54q0 9 5.5 14.5T422-720q9 0 14.5-5.5T442-740v-38q36 21 58 57t22 81h10q9 0 14.5 5.5T552-620q0 9-5.5 14.5T532-600h-10q0 66-47 113t-113 47Zm0-80q33 0 56.5-23.5T442-600H282q0 33 23.5 56.5T362-520Zm300 160-6-30q-6-2-11.5-4.5T634-402l-28 10-20-36 22-20v-24l-22-20 20-36 28 10q4-4 10-7t12-5l6-30h40l6 30q6 2 12 5t10 7l28-10 20 36-22 20v24l22 20-20 36-28-10q-5 5-10.5 7.5T708-390l-6 30h-40Zm20-70q12 0 21-9t9-21q0-12-9-21t-21-9q-12 0-21 9t-9 21q0 12 9 21t21 9Zm72-130-8-42q-9-3-16.5-7.5T716-620l-42 14-28-48 34-30q-2-5-2-8v-16q0-3 2-8l-34-30 28-48 42 14q6-6 13.5-10.5T746-798l8-42h56l8 42q9 3 16.5 7.5T848-780l42-14 28 48-34 30q2 5 2 8v16q0 3-2 8l34 30-28 48-42-14q-6 6-13.5 10.5T818-602l-8 42h-56Zm28-90q21 0 35.5-14.5T832-700q0-21-14.5-35.5T782-750q-21 0-35.5 14.5T732-700q0 21 14.5 35.5T782-650ZM362-200Z"/></svg>
+                  <a><li>Sunshine Dynamics</a></li>
+              <li class="hideOnMobile"><a href="#">Leasing</a></li>
+              <li class="hideOnMobile"><a href="#">Services</a></li>
+              <li class="hideOnMobile"><a href="#">About</a></li>
+              <li class="hideOnMobile"><a href="#">Login</a></li>
+              <li class="hideOnMobile"><a href="#">Customer Support</a></li>
+              <li class="hideOnMobile"><a href="#">Portfolio</a></li>
+              <li class="menu-button"onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+              -->
+            </ul>
+    </nav>
+    </header>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'; 
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none';
+        }
+    </script>
+
+    
+     
+    <div class = "imageSection">
+        <h1> &nbsp </h1>
+        <H1><em>Contact Customer Support</em></H1>
+    </div>
+
+    <div class="rectangle">
+        <h2><B>Contact Us!</B></h2>
+        <br>
+        
+        <div class = "flex-all">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="container">
+                          <div class="box"><svg xmlns="http://www.w3.org/2000/svg" height="170px" viewBox="0 -960 960 960" width="170px" fill="#ffffff"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></div>
+                        </div>
+                      </div>   
+                      
+                  <div class="flip-card-back" style="align-content: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="170px" viewBox="0 -960 960 960" width="170px" fill="rgb(21, 44, 58)"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <h1>(949) 267-9095</h1> 
+                  </div>
+                </div>
+            </div>
+        
+        
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="container">
+                        <div class="box"><svg xmlns="http://www.w3.org/2000/svg" height="170px" viewBox="0 -960 960 960" width="170px" fill="#ffffff"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg></div>
+                         </div>
+                      </div>   
+                      
+                  <div class="flip-card-back" style="align-content: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="170px" viewBox="0 -960 960 960" width="170px" fill="rgb(21, 44, 58)"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                     <h1>info@gmepe.com</h1>
+                  </div>
+                </div>
+            </div>
+        
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <div class="container">
+                        <div class="box"><svg xmlns="http://www.w3.org/2000/svg" height="170px" viewBox="0 -960 960 960" width="170px" fill="#ffffff"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg></div>
+        
+                           </div>
+                      </div>   
+                      
+                      <div class="flip-card-back" style="align-content: center;">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="170px" viewBox="0 -960 960 960" width="170px" fill="rgb(21, 44, 58)"><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190Zm120 254q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                        <h1>26439 Rancho Pkwy S Suite #120, Lake Forest, CA 92630</h1>
+                      </div>
+                </div>
+            </div>
+        </div>
+    
+        
+    </div>
+ 
+</div>
+
+
+
+   
+    <div class="white-background">
+    <div class="contact-rectangle">
+        
+      <svg xmlns="http://www.w3.org/2000/svg" height="124px" viewBox="0 -960 960 960" width="124px" fill="#152C3A "><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg>
+      <h1 class="open-sans-font"><b>Message Our Team</b></h1> 
+      <form>
+          <div class="form">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"style="width: 100%;">
+            <div id="emailHelp" class="form-text"></div>
+          </div>
+          <div class="form">
+            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+            <input type="phone" class="form-control" id="exampleInputPhone1">
+          </div>
+          <div class="form">
+            <label for="exampleInputPassword1" class="form-label">Leave a Message</label>
+            <input type="phone" class="form-control" id="exampleInputPhone1" style="height: 200px;">
+          </div>
+          <div class="form">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+
+        <h1 class="open-sans-font" style="background-color: #ffffff; margin-bottom: 0%; padding-bottom: 0%; padding-top: 5%; text-align: center;">Hours of Operation</h1>
+
+        <div class="business-hours">
+          <p><b>Monday</b><br><span class="spacing">8:00 AM - 5:00 PM</span></p>
+          <p><b>Tuesday</b><br><span class="spacing">8:00 AM - 5:00 PM</span></p>
+          <p><b>Wednesday</b><br><span class="spacing">8:00 AM - 5:00 PM</span></p>
+          <p><b>Thursday</b><br><span class="spacing">8:00 AM - 5:00 PM</span></p>
+          <p><b>Friday</b><br><span class="spacing">8:00 AM - 5:00 PM</span></p>
+          <p><b>Saturday</b><br><span class="spacing">10:00 AM - 5:00 PM</span></p>
+          <p><b>Sunday</b><br><span class="spacing">Closed</span></p>
+      </div>
+      
+       
+  
+  </div>
+
+ 
+</div>
+  <h1 class="open-sans-font" style="background-color: #ffffff; margin-bottom: 0%; padding-bottom: 0%; padding-top: 5%; text-align: center;">Our Locations</h1>
+  
+  <div class="api-rectangle">
+    <iframe
+  width="90%"
+  height="70%"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCQrpE5q2ctIBcRczO_4490yAK9sZVRGfI&q=GMEP Engineers, 33.6772232789476, -117.67106949229846"></iframe>
+  <!-- FIX ME...Google Maps API Restriction Set To Kevin's Desktop  -->
+  <!-- DO NOT SHOW PRIVATE API KEY -->
+</iframe>
+
+<iframe
+  width="90%"
+  height="70%"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCQrpE5q2ctIBcRczO_4490yAK9sZVRGfI&q= 33.646729992354395, -117.91873801064418">
+  <!-- FIX ME...Google Maps API Restriction Set To Kevin's Desktop  -->
+  <!-- DO NOT SHOW PRIVATE API KEY -->
+</iframe>
+
+<h1> &nbsp </h1>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+<footer>
+    
+
+    <div class = "cust_logos">
+
+        <hr style="color: rgb(21, 44, 58);">
+
+        <h5 class = "open-sans-font" style="color:grey"><b>Trusted by America's Leading Home Builders</b></h5>
+      
+        <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Logo_-_KB_Home.svg/1200px-Logo_-_KB_Home.svg.png' alt="KB HOMES" style="width: 5%; margin-right: 100px;">
+      
+        <img src="https://paradeofhomesdenver.com/wp-content/uploads/2018/04/Lennar_Logo.jpg" alt="LENNAR HOMES" style="width: 10%; margin-right: 100px;">
+        
+        <img src="https://cdnassets.hw.net/8b/b9/c807ba304007816fd129757973e4/tollbrothers-alhb-bluergb.jpg" alt="TOLL BROTHERS HOMES" style="width: 10%; margin-right: 100px;">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhSvMUXS0hFo6DEN9cIdCMdlD-csWWOdYraw&s" alt="DR HORTON HOMES" style="width: 10%;">
+      
+      </div>
+
+      
+
+    <div class="container-footer">
+        <footer class="py-5">
+          <div class="row">
+            
+            <hr><br><br>
+         
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Products</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Products</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SpyderBox</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">HV Unit</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">PV Station</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Request</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Resources</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Partners</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">SunGold</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Sol Ark</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">EG4</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Links</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>About Us</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Learn Solar</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-md-5 offset-md-1 mb-3">
+              <form>
+                <h5>Subscribe to our newsletter</h5>
+                <p>Monthly digest of what's new and exciting from us.</p>
+                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                  <label for="newsletter1" class="visually-hidden">Email address</label>
+                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                  <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+</footer>
+</body>
+
+</html>
