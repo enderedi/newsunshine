@@ -1,0 +1,429 @@
+/* * {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: Arial;
+    line-height: 1.6;
+    margin: 0;
+    height: 200vh;
+    background: linear-gradient(rgb(220, 223, 226), rgb(82, 151, 215)), url(solarpan.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:rgb(82, 151, 215);
+    padding: 1px 380px;
+}
+
+.left-nav, .right-nav {
+  display: flex;
+}
+
+.left-nav a, .right-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img {
+  max-width: 40px; 
+}
+
+.left-nav, .right-nav {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #3498db; 
+    position: relative;
+    padding: 5px 20px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #1a01f8;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover {
+    color: #fff; 
+    background-color: #1a01f8; 
+} */
+
+.cube {
+    background-color: white;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+    padding: 30px 90px 30px 90px;
+    text-align:justify;
+    opacity: 0.3; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.value-cube {
+    background-color: white;
+    margin-left: 180px;
+    margin-right: 180px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgb(128, 128, 128);
+    padding: 50px 80px 50px 80px;
+    text-align: justify;
+    opacity: 0.9; 
+    transform: translateY(20px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+h1 {
+    text-align: center;
+    color:#5297d7;
+}
+
+h2 {
+    text-align: center;
+    color: #3498db;
+}
+
+.search-box {
+    position: absolute;
+    top: 16px; 
+    right: 360px; 
+}
+
+.searching {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cube-search {
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 35px;
+    padding: 5px;
+    margin-top: 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(82, 151, 215, 0.7);
+    background-color: white;
+    transition: all 0.3s ease-out;
+}
+
+.cube-search input {
+    padding: 2px;
+    width: 180px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.write {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 2em;
+    z-index: 1;
+}
+
+.img-head {
+    background-image: url("../images/sleek1.png");
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: rgb(82, 151, 215);
+} */
+
+*{
+    margin: 0;
+    padding: 0; 
+}
+body{
+    background-size: cover; /* Change to cover to maintain aspect ratio */
+    background: linear-gradient(rgb(220, 223, 226), rgb(82, 151, 215)), url(solarpan.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white; 
+    background-attachment: fixed; /* Keep this if you want a fixed background */
+    
+}
+
+nav{
+    /* position:fixed; */
+    width: 100%; 
+    background-color: rgb(21,44,58); 
+    box-shadow: 3px 3px 5px rgba(168, 10, 10, 0.1); 
+
+}
+nav ul{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0;
+    padding-top: 15px;
+    list-style-type: none;
+    
+    /* position: fixed; */
+    width: 100%;
+    height: 9%; 
+    background-color: rgb(21, 44, 58); 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    color: white; 
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: white; 
+}
+nav a:hover{
+    height: 90%;
+    background-color: #0c4a6f; 
+}
+
+.montserrat-font {
+
+    /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 100 to 900 */
+     
+     font-family: "Montserrat", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+   }
+   
+   .open-sans-font {
+   
+   /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 300 to 800 */
+   
+     font-family: "Open Sans", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 300;
+     font-style: normal;
+     font-variation-settings:
+       "wdth" 100;
+   }
+   
+   .search-container {
+       display: flex-end;
+       justify-content: flex-end; /* Aligns to the right */
+      
+   }
+   
+   .engineered{
+       background-color: #ffffff;
+       color:#152C3A;
+       background-size: cover;
+       height: 10%;
+      
+   }
+   
+   .search-bar {
+       display: flex;
+       width: 150%;
+   }
+   .sidebar {
+        position: fixed; 
+        top: 0;
+        right: 0;
+        height: 100vh; 
+        width: 250px;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.345);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+.sidebar li{
+    width: 100%; 
+}
+.sidebar a{
+     width: 100%; 
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%; 
+    }
+}
+.dropdown {
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(10px);
+    background: rgba(0,119,181,0.75);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.dropdown-login {
+    display: none;
+    position: absolute;
+    background-color: slategray;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-login {
+    display: block;
+}
+.login-background{
+    background-color: rgba(255, 255, 255, 0.345);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    color: black;
+    padding: 40%;
+    width: 425px;
+
+}
+
+.center-body{
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.cust_logos{
+    padding: 2% 5% 0% 5%; 
+    background-color: #ffffff;
+    text-align: center;
+    filter: grayscale(100%);
+    filter: brightness(100%);
+}
+
+footer{
+    background-color: #ffffff;
+    
+}
+
+.contact-rectangle{
+    text-align: center;
+    background-color: #ffffff;
+    padding-bottom: 8%;
+   
+}
+
+.form{
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.container-footer{
+    background-color: #ffffff;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.api-rectangle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    gap: 2%;
+
+}
+
+.solar-description-left{
+    background-color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+
+}
+
+.solar-description-right{
+    background-color: #ffffff;
+    padding-left: 10%;
+    padding-right: 10%;
+    display:flex; 
+    
+   
+}
+.btn {
+    margin-left: 0px; /* Adjust the value as needed for spacing */
+    
+}
