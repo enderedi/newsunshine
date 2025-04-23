@@ -61,6 +61,17 @@
             color: #555;
             text-align: center; 
         } 
+        .product img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border: 2px solid #1c66df;
+            border-radius: 8px;
+        }
+
+
         @media screen and (max-width: 768px) {
             .products {
                 flex-direction: column;
@@ -119,66 +130,63 @@
     </nav>
     </header>
 
-    <!-- Products Section with Image Slider -->
-    <div class="products">
-        <div class="product">
-            <h3>The Spyder Box</h3>
-            <div class="image-slider" id="slider1">
-                <img src="images/1image1.png" alt="The Spyder Box View 1" class="slider-img">
-                <img src="images/1image2.jpg" alt="The Spyder Box View 2" class="slider-img" style="display: none;">
-                <img src="images/1image3.jpg" alt="The Spyder Box View 3" class="slider-img" style="display: none;">
+    <!-- Products Section using Bootstrap Grid -->
+    <div class="container mt-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <h3>Spyder Box</h3>
+                <img src="images/1image1.png" alt="Product Image 1" class="img-fluid border rounded">
             </div>
-            <p style="text-align: center;">Small power bank and distribution box.</p>
-            <div class="product-details" style="text-align: center;">
-                <p>This versatile box is ideal for providing electricity in remote areas, especially when setting up temporary power systems for construction or camping purposes.</p>
-                <p>Easy to transport and setup, it ensures power distribution is as efficient as possible.</p>
+            <div class="col-md-4">
+                <h3>High Voltage Unit</h3>
+                <img src="images/2image1.png" alt="Product Image 2" class="img-fluid border rounded">
             </div>
-        </div>
-        <div class="product">
-            <h3>High Voltage Unit</h3>
-            <div class="image-slider" id="slider2">
-                <img src="images/2image1.png" alt="High Voltage Unit View 1" class="slider-img">
-                <img src="images/2image2.jpg" alt="High Voltage Unit View 2" class="slider-img" style="display: none;">
-                <img src="images/2image3.jpg" alt="High Voltage Unit View 3" class="slider-img" style="display: none;">
-            </div>
-            <p style="text-align: center;">Can power an entire home, community pool, etc.</p>
-            <div class="product-details" style="text-align: center;">
-                <p>This unit is designed for large-scale energy needs, providing stable and reliable electricity for industrial and residential use alike.</p>
-                <p>Its robust design can handle the power requirements of entire homes, office buildings, and more.</p>
+            <div class="col-md-4">
+                <h3>Solar Station</h3>
+                <img src="images/3image1.jpg" alt="Product Image 3" class="img-fluid border rounded">
             </div>
         </div>
-        <div class="product">
-            <h3>Solar Station</h3>
-            <div class="image-slider" id="slider3">
-                <img src="images/3image1.png" alt="Solar Station View 1" class="slider-img">
-                <img src="images/3image2.jpg" alt="Solar Station View 2" class="slider-img" style="display: none;">
-                <img src="images/3image3.jpg" alt="Solar Station View 3" class="slider-img" style="display: none;">
+
+        <!-- Stacked Text Boxes Referencing Each Image -->
+        <div class="mt-5">
+            <div class="cube mb-4">
+                <h1>Spyder Box</h1>
+                <p>The Spyder Box is a compact, durable power distribution solution engineered for rapid deployment in field operations and remote worksites. 
+                    Designed to streamline temporary power setups, it consolidates multiple electrical outputs into a single, easily transportable unit. 
+                    In a senior design context, it plays a pivotal role in demonstrating scalable, modular energy distribution for on-site teams. 
+                    Its ruggedized enclosure and integrated circuit protection ensure reliable and safe operation under varying environmental conditions. 
+                    With standard outlets and customizable wiring configurations, the Spyder Box adapts to a range of scenarios including construction trailers, outdoor workstations, or emergency field deployments. 
+                    Its lightweight footprint allows for easy installation by a single technician, reducing setup time and labor overhead. 
+                    This product exemplifies efficient energy logistics in mobile or undeveloped settings, bridging the gap between infrastructure limitations and operational demand. 
+                    As part of our project’s utility infrastructure, it serves as a proof-of-concept for lightweight, scalable microgrid deployment.</p>
             </div>
-            <p style="text-align: center;">Used by anyone working on the tract to power batteries, lights, phones, tools, radios, etc. Max output of 240 volts.</p>
-            <div class="product-details" style="text-align: center;">
-                <p>The Solar Station is a portable and efficient solution for powering tools and devices in remote work environments, especially in off-grid locations.</p>
-                <p>It is the perfect companion for teams in construction, agriculture, or emergency services, providing reliable power when and where it's needed most.</p>
+            <div class="cube mb-4">
+                <h1>High Voltage Unit</h1>
+                <p>The High Voltage Unit is a high-capacity electrical generation and distribution system capable of supporting full-scale residential or light commercial loads. 
+                    In our senior design scenario, it functions as the central power backbone, simulating energy delivery to larger infrastructure such as homes, recreational facilities, or base camps. 
+                    Built to accommodate high-output demand, it integrates surge protection, voltage regulation, and load balancing to ensure system stability during peak usage. 
+                    The unit interfaces seamlessly with existing grid infrastructure or can operate independently in off-grid environments when paired with renewable sources. 
+                    It is particularly suited for projects that explore disaster response, energy resilience, or rapid-deployment shelters. 
+                    Its robust enclosure and high-conductivity internal architecture provide durability in extreme conditions while maximizing energy throughput. 
+                    This system underscores the importance of scalable, high-load power availability in remote or recovery-driven installations. 
+                    It reflects industry practices in temporary grid deployment and sustainable energy delivery.</p>
+            </div>
+            <div class="cube">
+                <h1>Solar Station</h1>
+                <p>The Solar Station is a self-contained, solar-powered energy hub designed to support essential devices and small equipment in off-grid environments. 
+                    Leveraging photovoltaic panels and an integrated battery system, it provides reliable, renewable power for tools, lighting, radios, and communication systems. 
+                    Within our senior design implementation, the Solar Station serves as a demonstration of environmentally responsible field operations, reducing dependence on fossil fuels. 
+                    Its portability and modular configuration allow it to be quickly positioned and recharged under varying site conditions. 
+                    The unit features AC and DC outputs, making it versatile across a range of construction and emergency scenarios. 
+                    Built-in charge controllers and smart inverters optimize energy use while protecting connected devices. 
+                    This product highlights sustainable design in real-world applications where grid access is unavailable or unreliable. 
+                    It represents a forward-thinking approach to field energy challenges by combining mobility, resilience, and clean power generation.</p>
             </div>
         </div>
     </div>
 
-    <div class="cube">
-        <h1>The Spyder Box</h1>
-        <p>This versatile box is ideal for providing electricity in remote areas, especially when setting up temporary power systems for construction or camping purposes.</p>
-        <p>Easy to transport and setup, it ensures power distribution is as efficient as possible.</p>
-    </div>
-
-    <div class="cube">
-        <h1>High Voltage Unit</h1>
-        <p>This unit is designed for large-scale energy needs, providing stable and reliable electricity for industrial and residential use alike.</p>
-        <p>Its robust design can handle the power requirements of entire homes, office buildings, and more.</p>
-    </div>
-
-    <div class="cube">
-        <h1>Solar Station</h1>
-        <p>The Solar Station is a portable and efficient solution for powering tools and devices in remote work environments, especially in off-grid locations.</p>
-        <p>It is the perfect companion for teams in construction, agriculture, or emergency services, providing reliable power when and where it's needed most.</p>
-    </div>
+    <!-- Footer -->
+    <!-- Unchanged footer section -->
     
     <script src="js/script.js" defer></script>
     <script>
